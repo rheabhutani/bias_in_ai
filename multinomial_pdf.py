@@ -20,6 +20,6 @@ def log_factorial(x):
 
 def PDF(P, G, n):
     P, G = array(P), array(G)
-    result = log_factorial(n) - sum(log_factorial(P)) + sum(P * log(G/n))
+    result = log_factorial(n) - sum(log_factorial(P)) + sum(P * log(G))
     return exp(result)
 
