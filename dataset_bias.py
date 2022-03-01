@@ -1,33 +1,17 @@
-import os
-import imquality.brisque as brisque
-import PIL.Image
+import pickle
+from distribution import *
 
-dir = (os.listdir("datasets/test"))
+iqa = pickle.load(open('./iqa.pkl', 'rb'))
+iqa_sex = make_list(GLOBAL_SEX)
+iqa_race = make_list(GLOBAL_RACE)
 
-GLOBAL = [.504, .496]
-BIAS_LIMIT = 5
+for i in iqa:
+    qual = int(iqa[i][0])
+    sex = int(iqa[i][1])
+    race = int(iqa[i][2])
 
-distribution = [0.0, 0.0]
-imgQuals = [0.0, 0.0]
+    iqa_sex[sex] += qual
+    iqa_race[race] += qual
 
-for i in dir:
-    label = i[:-4]
-    label = label.split('_')
-    distribution[1] += int(label[1])
-
-    photo = PIL.Image.open("datasets/test/" + i)
-    
-    score = (brisque.score(photo)) # FLOAT!!
-    print(photo, score)
-    imgQuals[int(label[1])] += score
-
-distribution[0] = len(dir) - distribution[1]
-#imgQuals = imgQuals/distribution
-imgQuals = [i / j for i, j in zip(imgQuals, distribution)]
-
-print("representation: ", distribution[0] * 100 / len(dir), distribution[1] * 100 / len(dir))
-print("image quality indices: ", imgQuals)
-print("total sampled population: ", len(dir))
-
-
-
+iqa_sex = [i / j for i, j in zip(iqa_sex, distribution_sex)]
+iqa_race = [i / j for i, j in zip(iqa_race, distribution_race)]
