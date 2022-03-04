@@ -2,7 +2,8 @@ import os
 
 from importlib_metadata import distribution
 
-dir = (os.listdir("datasets/part1"))
+# directory for NIST mugshot database (using folder of photos with 1 front view and 0 profile views for each person)
+dir = (os.listdir("/home/team/BiasAI/sd18/single/f1_p0"))
 
 def make_list(list):
     distribution = []
@@ -17,16 +18,28 @@ distribution_sex = make_list(GLOBAL_SEX)
 GLOBAL_RACE = [0.601, 0.122, 0.056, 0.007, 0.214] # white, black, asian, indian (country), others
 distribution_race = make_list(GLOBAL_RACE)
 
-# CHECK IF ALL VALUES ARE PRESETN FOR NIST
+# CHECK IF ALL VALUES ARE PRESENT FOR NIST
 for i in dir:
-    label = i[:-4]
-    label = label.split('_')
+    #label = i[:-4]
+    #label = label.split('_')
 
-    sex = int(label[1])
-    distribution_sex[sex] += 1
+    if (i[-3:] == 'png'):
+        #open associated txt file to see demographic info
+        txt = i[:-3] + 'txt'
+        f = open(txt, "r")
 
-    race = int(label[2])
-    distribution_race[race] += 1
+        #M or F
+        sex = (f.read(9))[-1:]
+        if (sex == 'M'):
+            distribution_sex[0] += 1
+        elif (sex == 'F'):
+            distribution_sex[1] += 1
 
-print('white: ', distribution_race[0], ', black: ', distribution_race[1], ', asian: ', distribution_race[2], ', indian: ', distribution_race[3], 'others: ', distribution_race[4])
-print('male: ', distribution_sex[0], ', female: ', distribution_sex[1])
+    #sex = int(label[1])
+    #distribution_sex[sex] += 1
+
+    #race = int(label[2])
+    #distribution_race[race] += 1
+
+#print('white: ', distribution_race[0], ', black: ', distribution_race[1], ', asian: ', distribution_race[2], ', indian: ', distribution_race[3], 'others: ', distribution_race[4])
+print('Number of males: ', distribution_sex[0], ', Number of females: ', distribution_sex[1])
