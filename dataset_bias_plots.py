@@ -37,26 +37,26 @@ fig = plt.figure(1)
 #fig.subplots_adjust(hspace = 2.0, wspace = 1.0, left = 0.3)
 
 # sex distribution pie chart
-ax1 = plt.subplot(4, 1, 1)
+ax1 = plt.subplot(2, 2, 1)
 plt.title('sex distribution')
 ax1.pie(distribution_sex, labels = sex_labels, autopct="%1.2f%%", startangle=90)
 ax1.axis('equal')
 
 # sex iqa pie chart
-ax2 = plt.subplot(4, 1, 2)
+ax2 = plt.subplot(2, 2, 2)
 plt.title('sex iqa')
 ax2.pie(iqa_sex, labels = sex_labels, autopct="%1.2f%%", startangle=90)
 ax2.axis('equal')
 plt.show()
 
 # race distribution pie chart
-ax3 = plt.subplot(4, 2, 1)
+ax3 = plt.subplot(2, 2, 3)
 plt.title('race distribution')
 ax3.pie(distribution_race, labels = race_labels, autopct="%1.2f%%", startangle=90)
 ax3.axis('equal')
 
 # race iqa pie chart
-ax4 = plt.subplot(4, 2, 2)
+ax4 = plt.subplot(2, 2, 4)
 plt.title('race iqa')
 ax4.pie(distribution_race, labels = race_labels, autopct="%1.2f%%", startangle=90)
 ax4.axis('equal')
