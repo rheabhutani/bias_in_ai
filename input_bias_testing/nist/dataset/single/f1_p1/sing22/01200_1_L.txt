@@ -1,4 +1,0 @@
-Gender: M
-Age: 28
-Position: R
-History: p01200_1.pct

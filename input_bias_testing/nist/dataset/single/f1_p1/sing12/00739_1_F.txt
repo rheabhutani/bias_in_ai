@@ -1,4 +1,0 @@
-Gender: F
-Age: 19
-Position: F
-History: f00739_1.pct

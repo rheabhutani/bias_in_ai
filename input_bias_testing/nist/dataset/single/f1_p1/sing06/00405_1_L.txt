@@ -1,4 +1,0 @@
-Gender: M
-Age: 19
-Position: L
-History: p00405_1.pct

@@ -1,4 +1,0 @@
-Gender: F
-Age: 28
-Position: R
-History: p00464_1.pct

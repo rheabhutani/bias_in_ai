@@ -1,4 +1,0 @@
-Gender: M
-Age: 16
-Position: R
-History: p01242_1.pct

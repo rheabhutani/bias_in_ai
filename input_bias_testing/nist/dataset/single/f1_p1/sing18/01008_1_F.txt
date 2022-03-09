@@ -1,4 +1,0 @@
-Gender: F
-Age: 27
-Position: F
-History: f01008_1.pct

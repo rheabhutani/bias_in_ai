@@ -1,4 +1,0 @@
-Gender: M
-Age: 16
-Position: F
-History: f01321_1.pct

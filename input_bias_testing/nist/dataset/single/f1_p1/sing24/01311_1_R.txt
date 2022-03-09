@@ -1,4 +1,0 @@
-Gender: M
-Age: 40
-Position: R
-History: p01311_1.pct
