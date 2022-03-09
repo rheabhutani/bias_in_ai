@@ -20,7 +20,7 @@ distribution_sex = make_list(GLOBAL_SEX)
 GLOBAL_RACE = [0.601, 0.122, 0.056, 0.007, 0.214] # white, black, asian, indian (country), others
 distribution_race = make_list(GLOBAL_RACE)
 
-# CHECK IF ALL VALUES ARE PRESENT FOR NIST
+# CHECK IF ALL VALUES ARE PRESENT FOR UTK
 for i in dir:
     label = i[:-4]
     label = label.split('_')

@@ -15,6 +15,7 @@ for i in iqa:
 
 iqa_sex = [i / j for i, j in zip(iqa_sex, distribution_sex)]
 iqa_race = [i / j for i, j in zip(iqa_race, distribution_race)]
+print(iqa_race)
 
 # for i in iqa:
 #     qual = int(iqa[i][0])

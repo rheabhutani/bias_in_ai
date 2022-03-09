@@ -50,5 +50,3 @@ print('Number of males: ', distribution_sex[0], ', Number of females: ', distrib
 #             distribution_sex[0] += 1
 #         elif (sex == 'F'):
 #             distribution_sex[1] += 1
-
-print('Number of males: ', distribution_sex[0], ', Number of females: ', distribution_sex[1])
