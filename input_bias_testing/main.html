@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Bias in AI</title>
+        <link href="styles.css" type="text/css" rel="stylesheet" />
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <h1>Bias in AI</h1>
+        <p id="names">Rhea Bhutani, Claudia Valenta, Karlee Wong, Rakesh Pavan</p>
+        <h2>Input Data Bias Testing</h3>
+        <label for="dataset">Select a dataset: </label>
+        <select name="dataset" id="dropdown">
+            <option value="utk">UTKFace</option>
+            <option value="nist">NIST Mugshot Identification Database</option>
+        </select>
+        <!--UTK-->
+        <section id="utk" class="">
+            <p class = "stats calc">UTKFace basic stats: </p>
+            <figure class="dist-plots">
+                <div class="race">
+                    <img src="utk/plots/rd_bar.png" alt="race distribution bar chart" />
+                    <img src="utk/plots/rd_pie.jpg" alt="race distribution pie chart" />
+                    <figcaption>Race statistics</figcaption>
+                </div>
+                <br>
+            </figure>
+            <figure>
+                <div class="sex">
+                    <img src="utk/plots/sd_bar.png" alt="sex distribution bar chart" />
+                    <img src="utk/plots/sd_pie.jpg" alt="sex distribution pie chart" />
+                    <figcaption>Sex statistics</figcaption>
+                </div>
+            </figure>
+            <div id="utk-iqa" class="iqa">
+            <p class="calc">IQA scores using BRISQUE-</p>
+                <figure class="iqa-plots">
+                    <img src="utk/plots/race_iqa.jpg" alt="race iqa" />
+                    <img src="utk/plots/sex_iqa.jpg" alt="sex iqa" />
+                    <figcaption>IQA values</figcaption>
+                </figure>
+            </div>
+            
+            <p id="bias-limit">
+                Bias limit: 5%
+            </p>
+            <p class="calc">
+                Bias Testing Tool results-
+            </p>
+            <div id="utk-calculating">Calculating...</div>
+
+            <div id="utk-bias" class="bias hidden">
+                <p>
+                    <b>Sex distribution bias</b>: <span class="bias">7.82e-08%</span>, the dataset is 4.99% under the bias limit. <br>
+                    <b>Race distribution bias</b>: <span class="bias">INSERT HERE</span>, the dataset is INSERT HERE the bias limit.<br>
+                    <b>Sex distribution bias</b>: <span class="bias">3.30%</span>, the dataset is 1.70% under the bias limit.<br>
+                    <b>Race IQA bias</b>: <span class="bias">8.06%</span>, the dataset is 3.06% above the bias limit.<br>
+                </p>
+            </div>
+        </section>
+        <!--NIST-->
+        <section id="nist" class="hidden">
+            <p class = "stats calc">NIST MID basic stats: </p>
+            <figure class="dist-plots">
+                <div class="race">
+                    <img src="nist/plots/placeholder.png" alt="race distribution bar chart" />
+                    <img src="nist/plots/placeholder.png" alt="race distribution pie chart" />
+                    <figcaption>Race statistics</figcaption>
+                </div>
+            </figure>
+            <figure>
+                <div class="sex">
+                    <img src="nist/plots/placeholder.png" alt="sex distribution bar chart" />
+                    <img src="nist/plots/placeholder.png" alt="sex distribution pie chart" />
+                    <figcaption>Sex statistics</figcaption>
+                </div>
+            </figure>
+            <div id="nist-iqa" class="nist">
+            <p class="calc">IQA scores using BRISQUE-</p>
+                <figure class="iqa-plots">
+                    <img src="nist/plots/placeholder.png" alt="race iqa" />
+                    <img src="nist/plots/placeholder.png" alt="sex iqa" />
+                    <figcaption>IQA values</figcaption>
+                </figure>
+            </div>
+            
+            <p>
+                Bias limit- 5%
+            </p>
+            <p class="calc">
+                Bias Testing Tool results:
+            </p>
+            <div id="nist-calculating">Calculating...</div>
+            <div id="nist-bias" class="bias hidden">
+                <p>
+                    <b>Distribution bias</b>: <span class="bias">INSERT HERE</span>, the dataset is INSERT HERE the bias limit.<br>
+                    <b>Race distribution bias</b>: <span class="bias">INSERT HERE</span>, the dataset is INSERT HERE the bias limit.<br>
+                    <b>Sex distribution bias</b>: <span class="bias">INSERT HERE</span>, the dataset is INSERT HERE the bias limit.<br>
+                    <b>Race IQA bias</b>: <span class="bias">INSERT HERE</span>, the dataset is INSERT HERE the bias limit.
+                </p>
+            </div>
+        </section>
+    </body>
+</html>

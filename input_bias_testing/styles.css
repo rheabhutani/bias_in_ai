@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+* {
+    font-family: 'Nunito', sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+}
+
+body {
+    overflow: auto;
+    text-align: center;
+    font-size: 2vh;
+}
+
+h1 {
+    font-family: 'Pacifico', cursive;
+    font-size: 7vh;
+}
+
+.hidden {
+    display: none;
+}
+
+img {
+    height: 20em;
+    width: auto;
+    padding-top: 1em;
+    padding-bottom: 3em;
+}
+
+#dropdown {
+    font-size: 2vh;
+    border: 2vh solid transparent;
+    border-color: #fff transparent transparent transparent;
+}
+
+.calc {
+    font-weight: bold;
+}
+
+figcaption {
+    font-size: 2vh;
+    font-style: italic;
+}
+
+#bias-limit {
+    font-weight: bold;
+    font-size: xx-large;
+}
