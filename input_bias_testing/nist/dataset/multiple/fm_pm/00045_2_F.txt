@@ -1,4 +1,0 @@
-Gender: M
-Age: 20
-Position: F
-History: f00045_2.pct

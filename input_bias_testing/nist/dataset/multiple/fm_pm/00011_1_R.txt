@@ -1,4 +1,0 @@
-Gender: F
-Age: 32
-Position: R
-History: p00011_1.pct

@@ -1,4 +1,0 @@
-Gender: M
-Age: 51
-Position: F
-History: f00037_4.pct
