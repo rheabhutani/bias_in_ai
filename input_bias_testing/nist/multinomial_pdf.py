@@ -11,7 +11,7 @@ def log_factorial(x):
 def PDF(P, G, n):
     ''' Arguments: 
     P -> The observed frequency distribution 
-    G -> The global probability 
+    G -> The global probability distribution
     N -> Number of samples (dataset size) 
 
     Returns: Assuming multinomial distribution, we return the chi-squared p-value for goodness of fit
