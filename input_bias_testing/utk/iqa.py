@@ -29,7 +29,7 @@ for i in dir:
         store[i] = [score, label[1], label[2]] # iqa, sex, race
         print(counter, "/", len(dir))
 
-pickle.dump(store, open('iqa.pkl', 'wb'))
+pickle.dump(store, open('input_bias_testing/utk/iqa.pkl', 'wb'))
 
 # for i in dir:
 #     if i[-3:] == 'png':

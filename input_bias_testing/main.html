@@ -21,7 +21,7 @@
             <figure class="dist-plots">
                 <div class="race">
                     <img src="utk/plots/rd_bar.png" alt="race distribution bar chart" />
-                    <img src="utk/plots/rd_pie.jpg" alt="race distribution pie chart" />
+                    <img src="utk/plots/rd_pie.png" alt="race distribution pie chart" />
                     <figcaption>Race statistics</figcaption>
                 </div>
                 <br>
@@ -29,15 +29,15 @@
             <figure>
                 <div class="sex">
                     <img src="utk/plots/sd_bar.png" alt="sex distribution bar chart" />
-                    <img src="utk/plots/sd_pie.jpg" alt="sex distribution pie chart" />
+                    <img src="utk/plots/sd_pie.png" alt="sex distribution pie chart" />
                     <figcaption>Sex statistics</figcaption>
                 </div>
             </figure>
             <div id="utk-iqa" class="iqa">
             <p class="calc">IQA scores using BRISQUE-</p>
                 <figure class="iqa-plots">
-                    <img src="utk/plots/race_iqa.jpg" alt="race iqa" />
-                    <img src="utk/plots/sex_iqa.jpg" alt="sex iqa" />
+                    <img src="utk/plots/race_iqa.png" alt="race iqa" />
+                    <img src="utk/plots/sex_iqa.png" alt="sex iqa" />
                     <figcaption>IQA values</figcaption>
                 </figure>
             </div>
@@ -54,7 +54,7 @@
                 <p>
                     <b>Sex distribution bias</b>: <span class="bias">7.82e-08%</span>, the dataset is 4.99% under the bias limit. <br>
                     <b>Race distribution bias</b>: <span class="bias">INSERT HERE</span>, the dataset is INSERT HERE the bias limit.<br>
-                    <b>Sex distribution bias</b>: <span class="bias">3.30%</span>, the dataset is 1.70% under the bias limit.<br>
+                    <b>Sex IQA bias</b>: <span class="bias">3.30%</span>, the dataset is 1.70% under the bias limit.<br>
                     <b>Race IQA bias</b>: <span class="bias">8.06%</span>, the dataset is 3.06% above the bias limit.<br>
                 </p>
             </div>
@@ -63,24 +63,16 @@
         <section id="nist" class="hidden">
             <p class = "stats calc">NIST MID basic stats: </p>
             <figure class="dist-plots">
-                <div class="race">
-                    <img src="nist/plots/placeholder.png" alt="race distribution bar chart" />
-                    <img src="nist/plots/placeholder.png" alt="race distribution pie chart" />
-                    <figcaption>Race statistics</figcaption>
-                </div>
-            </figure>
-            <figure>
                 <div class="sex">
-                    <img src="nist/plots/placeholder.png" alt="sex distribution bar chart" />
-                    <img src="nist/plots/placeholder.png" alt="sex distribution pie chart" />
+                    <img src="nist/plots/sd_pie.png" alt="sex distribution bar chart" />
+                    <img src="nist/plots/sd-bar.png" alt="sex distribution pie chart" />
                     <figcaption>Sex statistics</figcaption>
                 </div>
             </figure>
             <div id="nist-iqa" class="nist">
             <p class="calc">IQA scores using BRISQUE-</p>
                 <figure class="iqa-plots">
-                    <img src="nist/plots/placeholder.png" alt="race iqa" />
-                    <img src="nist/plots/placeholder.png" alt="sex iqa" />
+                    <img src="nist/plots/sex_iqa.png" alt="sex iqa" />
                     <figcaption>IQA values</figcaption>
                 </figure>
             </div>
@@ -94,10 +86,8 @@
             <div id="nist-calculating">Calculating...</div>
             <div id="nist-bias" class="bias hidden">
                 <p>
-                    <b>Distribution bias</b>: <span class="bias">INSERT HERE</span>, the dataset is INSERT HERE the bias limit.<br>
-                    <b>Race distribution bias</b>: <span class="bias">INSERT HERE</span>, the dataset is INSERT HERE the bias limit.<br>
-                    <b>Sex distribution bias</b>: <span class="bias">INSERT HERE</span>, the dataset is INSERT HERE the bias limit.<br>
-                    <b>Race IQA bias</b>: <span class="bias">INSERT HERE</span>, the dataset is INSERT HERE the bias limit.
+                    <b>Sex Distribution bias</b>: <span class="bias">INSERT HERE (GETTING 0 FROM PDF)</span>, the dataset is INSERT HERE the bias limit.<br>
+                    <b>Sex IQA bias</b>: <span class="bias">1.24%</span>, the dataset is 3.76% under the bias limit.<br>
                 </p>
             </div>
         </section>
