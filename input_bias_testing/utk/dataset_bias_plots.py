@@ -56,6 +56,6 @@ plt.show()
 
 # race iqa pie chart
 ax4 = plt.subplot(1, 1, 1)
-ax4.pie(distribution_race, labels = race_labels, autopct="%1.2f%%", startangle=90)
+ax4.pie(iqa_race, labels = race_labels, autopct="%1.2f%%", startangle=90)
 ax4.axis('equal')
 plt.show()

@@ -1,12 +1,11 @@
-import numpy as np 
-from numpy import array, log, exp
+from numpy import array
 import scipy.stats as stats
 
 def GAMMA_LN(n):
-    return sc.gammaln(n)
+    return stats.gammaln(n)
 
 def log_factorial(x):
-    return sc.gammaln(array(x)+1.0)
+    return stats.gammaln(array(x)+1.0)
 
 def PDF(P, G, n):
     ''' Arguments: 

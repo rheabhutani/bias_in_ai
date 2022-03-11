@@ -30,17 +30,3 @@ for i in dir:
         print(counter, "/", len(dir))
 
 pickle.dump(store, open('input_bias_testing/utk/iqa.pkl', 'wb'))
-
-# for i in dir:
-#     if i[-3:] == 'png':
-#         photo = PIL.Image.open("/home/team/BiasAI/sd18/f1_p0/" + i)
-#         score = (brisque.score(photo))
-#         print(photo, score)
-
-#         txt = i[:-3] + 'txt'
-#         f = open(txt, "r")
-#         sex = (f.read(9))[-1:]
-
-#         store[i] = [score, sex]
-
-# pickle.dump(store, open('iqa.pkl', 'wb'))
